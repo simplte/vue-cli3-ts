@@ -65,6 +65,7 @@ export default class Home extends Vue {
   }
   private created() {
     this.movieList(this.cate).then((res: any) => {
+      console.log(res.subjects)
       this.movieListData = res.subjects;
       this.loading = false;
     });

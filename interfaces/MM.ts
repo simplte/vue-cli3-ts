@@ -1,5 +1,4 @@
 
-// tslint:disable-next-line:class-name
 export interface movie {
     name: string;
     rating: rating;
@@ -15,16 +14,12 @@ export interface movie {
     alt: string;
     id: string;
 }
-
-// tslint:disable-next-line:class-name
 export interface rating {
     max: number;
     average: string;
     stars: number;
     min: number;
 }
-
-// tslint:disable-next-line:class-name
 export interface start {
     alt: string;
     avatars: [];

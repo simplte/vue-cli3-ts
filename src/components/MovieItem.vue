@@ -8,7 +8,7 @@
       @click="goToMovieDetail(item.id)"
     >
       <div class="movie-cover">
-        <img src="../assets/lz.webp" width="88" height="110">
+        <img :src="item.images.medium" width="88" height="110">
       </div>
       <div class="movie-des">
         <p class="title">{{item.title}}</p>
@@ -23,7 +23,7 @@
             v-for="items in item.casts"
             :key="items.name"
             style="margin-right: 4px;"
-          >{{ items.name}}</span>
+          >{{items.name}}</span>
         </p>
         <p class="director">
           导演:

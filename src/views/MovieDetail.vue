@@ -46,7 +46,7 @@
           <div class="container">
             <div class="box" v-for="item in detail.casts" @click="goToStart(item.id)">
               <div class="img">
-                <img :src='item.avatars'  width="80" height="100" >
+                <img :src='item.avatars.small'  width="80" height="100" >
               </div>
               <p>{{item.name}}</p>
             </div>

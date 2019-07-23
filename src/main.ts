@@ -6,16 +6,16 @@ import store from './store/index';
 
 Vue.config.productionTip = false;
 
-router.beforeEach((to, from, next) => {
-  //验证是否登录
-  if (to.path !== '/login' && !localStorage.token) {
-    return next({path: '/login'})
-  }
-  if (to.meta.title) {
-    document.title = to.meta.title;
-  }
-  next();
-});
+// router.beforeEach((to, from, next) => {
+//   //验证是否登录
+//   if (to.path !== '/login' && !localStorage.token) {
+//     return next({path: '/login'})
+//   }
+//   if (to.meta.title) {
+//     document.title = to.meta.title;
+//   }
+//   next();
+// });
 
 new Vue({
   router,
